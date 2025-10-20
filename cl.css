@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    /* padding:0;设置的 width（padding 和 border 会包含在这个 width 内） */
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(251, 252, 251);
+    padding: 20px;
+}
+
+.calculator {
+    width: 340px;
+    background-color: #f4f2f2;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.display-container {
+    border: 2px solid #333;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.display {
+    /* 控制元素内文本内容的颜色 */
+    color: balck;
+    text-align: right;
+    font-size: 2.5rem;
+    min-height: 100px;
+    /* 当一个单词或连续字符（如超长数字）长度超过容器宽度时，会在单词内部 “强制换行 */
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.buttons {
+    /* 将 .buttons 容器设置为网格布局容器，其内部的子元素会自动成为网格项 */
+    display: grid;
+    /* 创建 4 列，且每列的宽度相等 fr 是网格布局的特殊单位（fraction 的缩写，意为 “份数”）*/
+    grid-template-columns: repeat(4, 1fr);
+    /* 设置网格项之间的间距（包括水平列间距和垂直行间距） */
+    gap: 12px;
+}
+
+.btn {
+    border:2px solid #333;
+    border-radius: 50%;
+    height: 65px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    background-color: #e6e6e6;
+    color: black;
+}
+
+.number:hover {
+    background-color: #636262;
+}
+
+.operator {
+    background-color: #f9a826;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #e8970e;
+}
+
+.equals {
+    background-color: #f9a836;
+    color: white
+}
+
+/* .active {
+    background-color: #f9a826;
+} */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易计算器</title>
+    <link rel="stylesheet" href="cl.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <div class="name">
+            <strong>计 算 器 🧮</strong>
+        </div>
+
+        <div class="display-container">
+            <div class="display" id="display">0</div>
+        </div>
+
+        <div class="buttons">
+            <!-- 第1行 -->
+            <button class="btn operator" data-action="clear">AC</button>
+            <button class="btn operator" data-action="backspace">✕</button>
+            <button class="btn operator" data-action="toggle-sign">+/-</button>
+            <button class="btn operator" data-action="divide">÷</button>
+
+            <!-- 第2行-->
+            <button class="btn number" data-value="7">7</button>
+            <button class="btn number" data-value="8">8</button>
+            <button class="btn number" data-value="9">9</button>
+            <button class="btn operator" data-action="multiply">x</button>
+
+            <!-- 第3行-->
+            <button class="btn number" data-value="4">4</button>
+            <button class="btn number" data-value="5">5</button>
+            <button class="btn number" data-value="6">6</button>
+            <button class="btn operator" data-action="subtract">-</button>
+
+            <!-- 第4行 -->
+            <button class="btn number" data-value="1">1</button>
+            <button class="btn number" data-value="2">2</button>
+            <button class="btn number" data-value="3">3</button>
+            <button class="btn operator" data-action="add">+</button>
+
+            <!-- 第5行-->
+            <button class="btn operator" data-action="percentage">%</button>
+            <button class="btn number" data-value="0">0</button>
+            <button class="btn number" data-value=".">.</button>
+            <button class="btn operator equals" data-action="equals">=</button>
+        </div>
+
+    </div>
+
+    <script src="cl.js"></script>
+</body>
+
+</html>
